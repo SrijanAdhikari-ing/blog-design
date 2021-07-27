@@ -1,0 +1,174 @@
+@import url(https://fonts.google.com/specimen/Qahiri#standard-styles);
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.head {
+	color: white;
+	margin-top: 12px;
+	padding-right: 90px;
+	padding-left: 29px;
+}
+
+.Navbar {
+	display: flex;
+	align-items: center;
+	background-color: #121212;
+}
+.Navbar .logo {
+	position: relative;
+	font-weight: 70;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+.Nav-heads {
+	width: 100%;
+	display: flex;
+	padding-left: 50%;
+}
+.Nav-heads li {
+	list-style: none;
+	padding: 14px 16px;
+}
+
+.Nav-heads li a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 15px;
+}
+.Nav-heads li a:hover {
+	color: burlywood;
+}
+
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', sans-serif;
+	background: rgb(26, 188, 156);
+	background: -moz-linear-gradient(
+		-45deg,
+		rgba(26, 188, 156, 1) 0%,
+		rgba(142, 68, 173, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		-45deg,
+		rgba(26, 188, 156, 1) 0%,
+		rgba(142, 68, 173, 1) 100%
+	);
+	background: linear-gradient(
+		135deg,
+		rgba(26, 188, 156, 1) 0%,
+		rgba(142, 68, 173, 1) 100%
+	);
+}
+
+h1 {
+	font-size: 24px;
+	margin: 10px 0 0 0;
+	font-weight: lighter;
+	color: #eeeeee;
+}
+
+p {
+	background-color: white;
+	font-size: 12px;
+	font-weight: light;
+	color: black;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	line-height: 2em;
+}
+.content > p {
+	padding: 20px 10px;
+	border-radius: 5%;
+}
+span > a {
+	font-size: 18px;
+	color: #cccccc;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		color: #ffffff;
+	}
+}
+span {
+	color: red;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.avatar img {
+	width: 100%;
+}
+
+.content {
+	width: 100%;
+	max-width: 500px;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.content > h1 {
+	margin-bottom: 40px;
+}
+.content > div > button {
+	padding: 5px 5px;
+}
+button:hover {
+	cursor: pointer;
+	color: red;
+}
+.Button {
+	display: inline-block;
+	padding: 20px 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 40px;
+	outline: none;
+}
+p.copyright{
+	color: #121212;
+}
